@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "poppins", sans-serif;
+    background-color: #f4f5f7;
+    display: flex;/*Centrer tous le contenu par default en tant que colonnes*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.info-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;/*donnez un espacement au les elements du info-section*/
+}
+.profile-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;/*centrer l'image de profil au son container en utilisent le flexbox*/
+    width: 100%;
+    background: linear-gradient(rgb(144, 184, 144), rgb(174, 174, 214));
+}
+.profile-img img{
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 40%;
+    position: relative;
+    top: 40px;
+}
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;/*centrer les information du profil en utilisent le flexbox*/
+    gap: 1rem;
+    padding-top: 1em;
+}
+.profile-info h2{
+    font-weight: 600;
+}
+#job{
+    font-weight: 600;
+    opacity: 0.7;
+}
+#location {
+    opacity: 0.6;
+}
+#location i{
+    padding-right: 1em;
+}
+#contact-btn{
+    width: 80%;
+    font-weight: 600;
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 30px;
+    background-color: rgb(56, 134, 224);/*personnaliser le boutton de contact en ajoutons des animations*/
+    transition: all 0.5s ease;
+}
+#contact-btn:hover{
+    background-color: #225469;
+}
+.social-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3em;
+    gap: 1rem;
+}
+.social-platforms{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+#instagram{
+    font-size: 3rem;
+    transition: all 0.5s ease;
+}
+#linkedin{
+    font-size: 3rem;
+    transition: all 0.5s ease;
+}
+#instagram:hover{
+    color: chocolate;
+}
+#linkedin:hover{
+    color: #171a1c;
+}
+.team-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team-grid{
+    display: grid;/*organiser la partie du "team" en une seule ligne en utilisent les grilles */
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-content: center;
+}
+.member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    transform: translateY(-20px);
+    transition: all 0.7s ease;
+    padding-bottom: 1em;
+    border-radius: 20px;
+}
+.team-section h3{
+    padding-bottom: 2em;
+}
+.member img{
+    border: 3px solid rgb(10, 254, 84);
+    border-radius: 50%;
+    width: 70%;
+    margin: 1rem;
+}
+.member:hover{
+    transform: translateY(-40px);
+    box-shadow: 0px 2px 17px rgb(100, 84, 84);
+    transition: all 0.7s ease;
+}
+.member p{
+    padding-top: 1em;
+    font-size: small;
+    text-align: center;
+}
